@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="aboutcar.util.forwebs.com.aboutcars.SplashActivity"
+    android:background="@color/maincolor3">
+    <ProgressBar
+        android:id="@+id/progressBar_intro"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progressbar_custom" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/icon_512_2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView"
+        android:scaleType="center"
+        android:adjustViewBounds="false" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/info_progress"
+       />
+
+    <TextView
+        android:text="@string/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_progress"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/info_states"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
